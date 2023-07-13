@@ -8,7 +8,7 @@ import Router from '../Router';
 import { muiTheme } from '@/utils';
 
 const apolloClient = new ApolloClient({
-  uri: 'https://rickandmortyapi.com/graphql',
+  uri: import.meta.env.VITE_APP_API,
   cache: new InMemoryCache(),
 });
 

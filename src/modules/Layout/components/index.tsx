@@ -10,6 +10,7 @@ export type TLayoutProps = {
 
 const _Layout = (props: TLayoutProps) => {
   const { children } = props;
+
   return (
     <Box
       sx={{
@@ -18,6 +19,7 @@ const _Layout = (props: TLayoutProps) => {
     >
       <Header />
       <Container
+        className={'main-container'}
         sx={{
           height: '2000px',
           pt: '64px',

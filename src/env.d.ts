@@ -1,7 +1,8 @@
 /// <reference types="vite/client" />
 
 interface ImportMetaEnv {
-  readonly PORT: number;
+  readonly VITE_APP_PORT: number;
+  readonly VITE_APP_API: string;
 }
 
 interface ImportMeta {

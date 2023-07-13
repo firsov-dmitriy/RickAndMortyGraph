@@ -15,13 +15,13 @@ import AdbIcon from '@mui/icons-material/Adb';
 
 import { StyledAppBar } from '@/modules/Layout/components/Header/styles';
 
-const pages = ['Products', 'Pricing', 'Blog'];
+const pages = ['Chars', 'Pricing', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const _Header = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
   const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
-  const triggerScroll = useScrollTrigger({ disableHysteresis: true });
+  const triggerScroll = useScrollTrigger({ disableHysteresis: true, threshold: 0 });
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
   };
